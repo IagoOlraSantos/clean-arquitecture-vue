@@ -53,9 +53,11 @@
     "vue-tsc": "^0.29.8"
   },
   "lint-staged": {
-    "*.js": "eslint --fix",
-    "*.css": "stylelint --fix",
-    "*.scss": "stylelint --fix",
-    "*.{js,ts,css,vue,scss,md}": "prettier --write"
+    "*.{js, ts}": "eslint --fix",
+    "*.{css, scss}": "stylelint --fix",
+    "*.{js,ts,css,vue,scss,md}": "prettier --write",
+    "*.{ts, vue}": [
+      "yarn test:staged"
+    ]
   }
 }
