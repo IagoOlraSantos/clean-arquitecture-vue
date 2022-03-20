@@ -16,6 +16,7 @@
     "test:coverage": "npm run test:ci && coveralls < coverage/lcov.info"
   },
   "dependencies": {
+    "axios": "^0.26.1",
     "vue": "^3.2.25"
   },
   "devDependencies": {
