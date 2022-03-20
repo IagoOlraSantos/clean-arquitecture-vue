@@ -53,7 +53,7 @@
     "vue-tsc": "^0.29.8"
   },
   "lint-staged": {
-    "*.js": "eslint --cache --fix",
+    "*.js": "eslint --fix",
     "*.css": "stylelint --fix",
     "*.scss": "stylelint --fix",
     "*.{js,ts,css,vue,scss,md}": "prettier --write"
